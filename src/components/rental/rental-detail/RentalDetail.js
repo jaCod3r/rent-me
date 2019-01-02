@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../../actions';
+import * as actions from '../../../actions';
 
 
 
@@ -13,14 +13,19 @@ class RentalDetail extends React.Component {
 
 
   render() {
-    debugger;
     const rental = this.props.rental;
 
-    return (
-      <div>
-        <h1>{rental.city}</h1>
-      </div>
-    )
+    if(rental.id) {
+      return (
+        <div>
+          <h1>{rental.city}</h1>
+        </div>
+      )
+    } else {
+      return (
+      <h1>Loading...</h1>
+      )
+    }
   }
 }
 
