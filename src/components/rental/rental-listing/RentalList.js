@@ -42,8 +42,8 @@ export class RentalList extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    rentals: state.rentals.data
-  }
-}
+// function mapStateToProps(state) {
+//   return {
+//     rentals: state.rentals.data
+//   }
+// }
